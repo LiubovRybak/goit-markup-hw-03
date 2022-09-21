@@ -1,0 +1,248 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--white-color);
+}
+
+:root {
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --dark-grey-color: #212121;
+    --light-gray-color: #757575;
+    --blue-color: #2196F3;
+    --dirty-white-color: #F5F4FA;
+    --gray-color: #2F303A;
+    --btn-blue-color: #188CE8;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.header-text, 
+.header-tel,
+.header-mail {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.about-top-text, .team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--dark-grey-color);
+}
+
+.team-top-text,
+.team-text {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.contacts-address,
+.contact-link {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+footer {
+    background-color: var(--gray-color);
+}
+
+/* Header  */
+.header-logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--blue-color);
+}
+
+.studio {
+    color: var(--black-color);
+}
+
+.header-text {
+    color: var(--dark-grey-color);
+}
+
+.header-tel,
+.header-mail {
+    color: var(--light-gray-color);
+}
+
+.header-text:hover,
+.header-text:focus {
+    color: var(--blue-color);
+}
+
+.header-tel:hover,
+.header-tel:focus {
+    color: var(--blue-color);
+}
+
+.header-mail:hover,
+.header-mail:focus {
+    color: var(--blue-color);
+}
+ /* Hero */
+
+ .hero {
+    background: var(--gray-color);
+ }
+
+ .hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white-color);
+}
+
+.hero-button {
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--white-color);
+    background-color: var(--blue-color)
+} 
+
+
+.hero-button:hover,
+.hero-button:focus {
+    background-color: var(--btn-blue-color);
+}
+
+ /* Benefits */
+
+ .benefit-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--dark-grey-color);
+ }
+
+ .benefit-text {
+    font-size: 14px;
+    line-height: 1.71;   
+    letter-spacing: 0.03em;   
+    color: var(--light-gray-color);
+ }
+
+ /* About */
+
+
+/* Team */
+
+.team {
+    background: var(--dirty-white-color);
+}
+
+.team-top-text {
+    font-weight: 500;
+    color: var(--dark-grey-color);
+}
+
+.team-text {  
+    color: var(--light-gray-color);
+}
+
+.team-item {
+    background-color: var(--white-color);
+}
+ 
+/* Contacts */
+
+.contacts {
+    font-style: normal;
+}
+
+.contacts-address {
+    color: var(--white-color);
+}
+
+.contact-link {
+    color: rgba(255, 255, 255, 0.6);
+}
+.contact-link:hover,
+.contact-link:focus{
+    color: var(--blue-color);
+}
+
+.contacts-address:hover,
+.contacts-address:focus {
+    color: var(--blue-color);
+}
+
+.studio-footer {
+    color: var(--white-color);
+}
+
+/* Portfolio */
+
+.portfolio-item-btn {
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--dark-grey-color);
+    background: var(--dirty-white-color);
+}
+
+.portfolio-item-btn:hover,
+.portfolio-item-btn:focus {
+    background: var(--blue-color);
+    color: var(--white-color);
+}
+
+.examples-top-text {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.00;    
+    letter-spacing: 0.06em;
+    color: var(--dark-grey-color);
+}
+.examples-text {
+    font-size: 16px;
+    line-height: 1.88;       
+    letter-spacing: 0.03em;
+    color: var(--light-gray-color); 
+}
