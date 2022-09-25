@@ -1,6 +1,24 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: var(--white-color);
+    margin: 0px;
 }
 
 :root {
@@ -12,6 +30,33 @@ body {
     --dirty-white-color: #F5F4FA;
     --gray-color: #2F303A;
     --btn-blue-color: #188CE8;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+}
+
+ul,
+ol {
+    margin: 0px;
+    padding-left: 0px;
+    list-style: none;
+}
+
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+button {
+    cursor: pointer;
 }
 
 .visually-hidden {
@@ -74,7 +119,38 @@ footer {
 }
 
 /* Header  */
+
+.header {
+    background-color: var(--white-color);
+
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #ECECEC
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-navigation {
+    display: flex;
+    align-items: center;
+}
+
+.header-list {
+    display: flex;
+    margin-left: 0px;
+    flex-wrap: nowrap;
+}
+
+
 .header-logo {
+    margin-left: 0px;
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -91,9 +167,24 @@ footer {
     color: var(--dark-grey-color);
 }
 
+.header-portfolio {
+    margin: 0px 50px 0px 50px;
+    padding: 32px 0px 32px 0px;
+}
+
+.header-contact, .header-studio {
+    padding: 32px 0px 32px 0px;
+}
+
+.header-mail {
+    margin-right: 50px;
+    margin-left: 344px;
+}
+
 .header-tel,
 .header-mail {
     color: var(--light-gray-color);
+    padding: 32px 0px 32px 0px;
 }
 
 .header-text:hover,
@@ -112,6 +203,13 @@ footer {
 }
  /* Hero */
 
+ .container-hero {
+    width: 1600px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
  .hero {
     background: var(--gray-color);
  }
@@ -124,22 +222,37 @@ footer {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--white-color);
+
+    width: 696px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
 }
 
 .hero-button {
+    display: inline-block;
+   
     font-family: inherit;
-    cursor: pointer;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    display: flex;
+    text-decoration: none;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    color: var(--white-color);
-    background-color: var(--blue-color)
-} 
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
+    color: var(--white-color);
+    background-color: var(--blue-color);
+
+    min-width: auto;
+    height: 50px;
+    margin: auto;
+    padding: 10px 32px;  
+} 
 
 .hero-button:hover,
 .hero-button:focus {
@@ -147,6 +260,27 @@ footer {
 }
 
  /* Benefits */
+
+ .container-benefits {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+ .benefit-list {
+    display: flex;
+    flex-direction: row;
+ }
+
+ .benefit-item {
+    width: 270px;
+    margin-right: 30px;
+ }
+
+ .benefit-item:nth-child(4n) {
+    margin-right: 0px;
+ }
 
  .benefit-title {
     font-weight: 700;
@@ -166,27 +300,107 @@ footer {
 
  /* About */
 
+ .container-about {
+    padding-bottom: 94px;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+ .about-list {
+    display: flex;
+    flex-direction: row;
+ }
+
+ .about-item {
+    margin-right: 30px;
+ }
+
+ .about-item:nth-child(3n) {
+    margin-right: 0px;
+ }
+
+ .about-top-text {
+    margin-bottom: 50px;
+ }
+
 
 /* Team */
+
+.container-team {
+    padding-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.team-list {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 94px;
+}
+
+.team-item {
+    width: 270px;
+    margin-right: 30px;
+    flex-basis: auto;
+}
+
+.team-item:nth-child(4n) {
+    margin-right: 0px;
+}
 
 .team {
     background: var(--dirty-white-color);
 }
 
 .team-top-text {
+    padding: 30px 70px 10px 71px;
+    
     font-weight: 500;
     color: var(--dark-grey-color);
 }
 
 .team-text {  
+    padding-right: 70px;
+    padding-bottom: 30px;
+    padding-left: 70px;
+
     color: var(--light-gray-color);
 }
 
 .team-item {
     background-color: var(--white-color);
 }
+
+.team-title {
+    padding-top: 94px;
+    padding-bottom: 50px;
+}
  
 /* Contacts */
+
+.footer-logo {
+    display: block;
+    margin-bottom: 20px;
+    padding-top: 60px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--blue-color);
+}
+
+.contacts-list {
+    padding-bottom: 60px;
+}
+
+.contacts-item {
+    margin-bottom: 9px;
+}
+
+.contacts-item:nth-child(3n) {
+    margin-bottom: 0px;
+}
 
 .contacts {
     font-style: normal;
@@ -215,6 +429,41 @@ footer {
 
 /* Portfolio */
 
+.container-portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-direction: row;
+    width: 575px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.all {
+    width: 73px;
+}
+
+.web {
+    width: 125px;
+}
+
+.apps {
+    width: 112px;
+}
+
+.design {
+    width: 103px;
+}
+
+.marketing {
+    width: 130px;
+}
+
 .portfolio-item-btn {
     font-family: inherit;
     cursor: pointer;
@@ -225,6 +474,13 @@ footer {
     letter-spacing: 0.03em;
     color: var(--dark-grey-color);
     background: var(--dirty-white-color);
+
+    margin-right: 8px;
+    margin-bottom: 50px;
+}
+
+.portfolio-item-btn:nth-child(5n) {
+    margin-right: 0px;
 }
 
 .portfolio-item-btn:hover,
@@ -233,12 +489,41 @@ footer {
     color: var(--white-color);
 }
 
+.examples-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.examples-item {
+    width: 370px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    border-top: none;
+}
+
+.examples-item:nth-child(3n+3) {
+    margin-right: 0px;
+}
+
+.examples-item:nth-child(n + 7) {
+    margin-bottom: 0px;
+}
+
+.container-examples-top-text {
+    padding: 20px 24px;
+}
+
 .examples-top-text {
     font-weight: 700;
     font-size: 18px;
     line-height: 2.00;    
     letter-spacing: 0.06em;
     color: var(--dark-grey-color);
+
+    margin-bottom: 4px;
 }
 .examples-text {
     font-size: 16px;
